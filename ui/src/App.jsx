@@ -4,8 +4,6 @@ import { UserProvider, ClientProvider, InvoiceProvider } from './contexts';
 import Routes from './routes';
 import './styles/index.scss';
 
-// localStorage.removeItem('token');
-// localStorage.removeItem('user');
 function App() {
   return (
     <div className="app">
