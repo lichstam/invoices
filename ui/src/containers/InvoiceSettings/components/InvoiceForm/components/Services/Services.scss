@@ -1,0 +1,24 @@
+.services {
+  padding: 12px;
+
+  &__button {
+    margin: 18px 0 3px 0;
+    width: 30%;
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__select {
+    width: 220px;
+  }
+
+  &__currency {
+    display: flex;
+    font-size: 9pt;
+    flex-direction: column;
+    margin: 16px 0;
+  }
+}

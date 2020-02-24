@@ -1,0 +1,36 @@
+.invoice-form {
+  &__user {
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__wrapper {
+    padding: 12px;
+  }
+
+  &__select {
+    width: 220px;
+  }
+
+  &__button {
+    margin-left: 21px;
+
+    &-wrapper {
+      display: flex;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__save-button {
+    width: 20%;
+    margin-top: 12px;
+    margin-right: 24px;
+    align-self: flex-end;
+  }
+}

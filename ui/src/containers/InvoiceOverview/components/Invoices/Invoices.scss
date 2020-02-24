@@ -1,0 +1,36 @@
+.invoices {
+  &__item {
+    @include resetButton;
+    width: 100%;
+    padding: 18px;
+
+    &:hover {
+      background: lighten(grey, 47%);
+      cursor: pointer;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__pick {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+
+  &__label {
+    margin-bottom: 4px;
+    font-size: 9pt;
+  }
+
+  &__create {
+    margin-left: 12px;
+  }
+
+  &__logout {
+    margin-left: auto;
+  }
+}

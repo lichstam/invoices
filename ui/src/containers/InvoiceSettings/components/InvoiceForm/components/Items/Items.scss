@@ -1,0 +1,14 @@
+.items {
+  display: flex;
+  margin: 10px 0;
+  flex-direction: column;
+
+  &__total {
+    align-self: flex-end;
+    margin-top: 16px;
+    margin-right: 30px;
+    > b {
+      margin-left: 4px;
+    }
+  }
+}

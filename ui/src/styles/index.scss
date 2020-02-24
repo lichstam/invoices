@@ -1,0 +1,12 @@
+@import '~antd/dist/antd.css';
+@import './mixins.scss';
+@import '../containers/InvoiceSettings/InvoiceSettings.scss';
+@import '../containers/InvoiceSettings/components/InvoiceForm/InvoiceForm.scss';
+@import '../containers/InvoiceSettings/components/InvoiceForm/components/Services/Services.scss';
+@import '../containers/InvoiceSettings/components/InvoiceForm/components/Items/Items.scss';
+@import '../containers/InvoiceOverview/components/Invoices/Invoices.scss';
+@import '../components/Box/Box.scss';
+@import '../components/InputModal/InputModal.scss';
+@import '../containers/InvoiceOverview/InvoiceOverview.scss';
+@import '../containers/Register/Register.scss';
+@import '../App.scss';

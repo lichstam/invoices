@@ -1,0 +1,27 @@
+version: '3'
+services:
+  mongodb:
+    image: "mongo"
+    networks:
+     - app-network
+  backend:
+    build: ./api/
+    depends_on:
+      - mongodb
+    ports:
+      - "6200:6200"
+    networks:
+     - app-network
+    volumes:
+      - ./api:/usr/src/app 
+      - /usr/src/app/node_modules 
+  frontend:
+    build: ./ui/
+    ports:
+      - "5000:5000"
+    depends_on:
+      - backend
+
+networks:
+  app-network:
+    driver: bridge
