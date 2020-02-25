@@ -12,9 +12,6 @@ services:
       - "6200:6200"
     networks:
      - app-network
-    volumes:
-      - ./api:/usr/src/app 
-      - /usr/src/app/node_modules 
   frontend:
     build: ./ui/
     ports:
