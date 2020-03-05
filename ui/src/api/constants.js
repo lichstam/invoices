@@ -1,4 +1,4 @@
-export const localhost = process.env.REACT_APP_API;
+export const localhost = `${window.location.origin}/api`;
 
 export const invoiceEndpoint = `${localhost}/invoice`;
 export const clientEndpoint = `${localhost}/client`;

@@ -14,16 +14,12 @@ COPY --chown=node:node . /ui/
 
 RUN yarn build
 
-FROM node:12-alpine as release
+FROM nginx as release
 
-RUN yarn global add serve
+RUN rm /etc/nginx/conf.d/default.conf
 
-RUN mkdir /build && chown -R node:node /build
+COPY frontend.conf /etc/nginx/conf.d/
 
-USER node
-
-COPY --from=build --chown=node:node /ui/build ./build
+COPY --from=build /ui/build /build
 
 EXPOSE 5000
-
-CMD [ "serve", "-s", "build" ]

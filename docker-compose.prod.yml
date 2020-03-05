@@ -1,0 +1,30 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo
+    restart: always
+    networks:
+     - app-network
+    volumes:  
+     - dbdata:/data/db
+  backend:
+    image: backend
+    depends_on:
+      - mongodb
+    ports:
+      - "6200:6200"
+    networks:
+     - app-network
+  frontend:
+    image: frontend
+    ports:
+      - "5000:5000"
+    depends_on:
+      - backend
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  dbdata:
