@@ -4,3 +4,6 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['tag', 'workspace_backend', 'gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA']
 images: ['gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['tag', 'workspace_frontend', 'gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA']
+images: ['gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA']
