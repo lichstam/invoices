@@ -24,7 +24,7 @@ spec:
         io.kompose.service: frontend
     spec:
       containers:
-      - image: frontend:latest
+      - image: gcr.io/strong-market-269209/frontend:1bb91287508770a7589f8bf1c9d19f7dd8ac5948
         imagePullPolicy: IfNotPresent
         name: frontend
         ports:
